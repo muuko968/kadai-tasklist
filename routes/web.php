@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TasksController@index');
+
+Route::get('tasks/{id}', 'TasksController@delete')->name('tasks.delete');
+Route::resource('tasks', 'TasksController');

@@ -12,8 +12,6 @@
                 <div class="form-group">
                     {!! Form::label('content', 'やること:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
-                    {!! Form::label('check', 'やること:') !!}
-                    {!! Form::text('check', null, ['class' => 'form-control']) !!}
                 </div>
 
                 {!! Form::submit('更新', ['class' => 'btn btn-primary']) !!}

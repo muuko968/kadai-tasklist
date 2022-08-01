@@ -13,5 +13,5 @@
 
 Route::get('/', 'TasksController@index');
 
-Route::get('tasks/{id}', 'TasksController@delete')->name('tasks.delete');
+// Route::get('tasks/{id}', 'TasksController@delete')->name('tasks.delete');
 Route::resource('tasks', 'TasksController');

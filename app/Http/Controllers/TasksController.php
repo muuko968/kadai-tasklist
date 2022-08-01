@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Task;
+
 
 class TasksController extends Controller
 {
@@ -30,7 +32,6 @@ class TasksController extends Controller
     public function create()
     {
         $task = new Task;
-
         // メッセージ作成ビューを表示
         return view('tasks.create', [
             'task' => $task,

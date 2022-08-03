@@ -26,7 +26,7 @@
         </table>
     @endif
     
-    {{-- タスク作成ページへのリンク --}}
-    {!! link_to_route('tasks.create', 'タスクの投稿', [], ['class' => 'btn btn-primary']) !!}
+    {{-- やること投稿ページへのリンク --}}
+    {!! link_to_route('tasks.create', 'やることの投稿', [], ['class' => 'btn btn-primary']) !!}
     
 @endsection

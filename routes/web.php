@@ -14,7 +14,7 @@ Route::get('/', function () {
     return view('start');
 });
 
-//Route::get('/', 'TasksController@index');
+Route::get('/index', 'TasksController@index');
 
 // ユーザ登録
 Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
